@@ -1,4 +1,7 @@
 PODS:
+  - CHTCollectionViewWaterfallLayout (0.9.7):
+    - CHTCollectionViewWaterfallLayout/ObjC (= 0.9.7)
+  - CHTCollectionViewWaterfallLayout/ObjC (0.9.7)
   - DKNightVersion (2.4.3):
     - DKNightVersion/Core (= 2.4.3)
     - DKNightVersion/CoreAnimation (= 2.4.3)
@@ -13,20 +16,27 @@ PODS:
   - DKNightVersion/UIKit (2.4.3):
     - DKNightVersion/Core
   - Masonry (1.1.0)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout
   - DKNightVersion
   - Masonry
+  - YYText
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CHTCollectionViewWaterfallLayout
     - DKNightVersion
     - Masonry
+    - YYText
 
 SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
   DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 9303f71c1e511d87c86cccab4bcfa81593ea40de
+PODFILE CHECKSUM: 305033dd3eee3afe542f9bf7e5235be05dc0aeb8
 
 COCOAPODS: 1.5.3

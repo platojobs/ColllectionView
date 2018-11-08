@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FCF31E603080F0D830875C746986D90A"
+               BlueprintIdentifier = "4030E37790C0F59946F48AB5B2C1465B"
                BlueprintName = "Pods-SkinSwitch"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-SkinSwitch.a">

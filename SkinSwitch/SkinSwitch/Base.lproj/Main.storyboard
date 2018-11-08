@@ -25,15 +25,30 @@
                                     <action selector="change" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHz-kC-umU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-ET-2NB">
+                                <rect key="frame" x="35" y="164" width="305" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ju1-43-uEY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="vL9-ET-2NB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Ttg-bp-vfU"/>
+                            <constraint firstItem="vL9-ET-2NB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dPC-b3-Uo3"/>
                             <constraint firstItem="brL-81-eav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n60-jV-jEF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vL9-ET-2NB" secondAttribute="trailing" constant="35" id="tkb-E4-6xq"/>
                             <constraint firstItem="brL-81-eav" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vbO-9R-mvP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qat-95-yfn"/>
+                    <connections>
+                        <outlet property="pas" destination="vL9-ET-2NB" id="eX1-BH-hF9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

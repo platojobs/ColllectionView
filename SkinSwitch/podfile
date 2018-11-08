@@ -8,6 +8,9 @@ target 'SkinSwitch' do
     
     
     pod 'Masonry'
- 
-    pod "DKNightVersion"
+    pod 'YYText'
+    pod 'DKNightVersion'
+
+    pod 'CHTCollectionViewWaterfallLayout'
+
 end

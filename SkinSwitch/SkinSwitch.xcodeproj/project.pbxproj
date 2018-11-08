@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9D4564DE9DD7D9E20BC9DFC4 /* libPods-SkinSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EB3E50A0530C8090962FE3 /* libPods-SkinSwitch.a */; };
+		AB128F4B2192BCE700E9AB2C /* DBMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB128F4A2192BCE700E9AB2C /* DBMeController.m */; };
+		AB128F4E2192C3ED00E9AB2C /* DBHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB128F4D2192C3ED00E9AB2C /* DBHeaderReusableView.m */; };
 		AB9FADDE2191869200F141F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9FADDD2191869200F141F9 /* AppDelegate.m */; };
 		AB9FADE12191869200F141F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9FADE02191869200F141F9 /* ViewController.m */; };
 		AB9FADE42191869200F141F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9FADE22191869200F141F9 /* Main.storyboard */; };
@@ -38,6 +40,10 @@
 /* Begin PBXFileReference section */
 		3F220CCF9B6C3C51551E8805 /* Pods-SkinSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkinSwitch/Pods-SkinSwitch.release.xcconfig"; sourceTree = "<group>"; };
 		8682CA4653B459BEDB5526F2 /* Pods-SkinSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkinSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkinSwitch/Pods-SkinSwitch.debug.xcconfig"; sourceTree = "<group>"; };
+		AB128F492192BCE700E9AB2C /* DBMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBMeController.h; sourceTree = "<group>"; };
+		AB128F4A2192BCE700E9AB2C /* DBMeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBMeController.m; sourceTree = "<group>"; };
+		AB128F4C2192C3ED00E9AB2C /* DBHeaderReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHeaderReusableView.h; sourceTree = "<group>"; };
+		AB128F4D2192C3ED00E9AB2C /* DBHeaderReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHeaderReusableView.m; sourceTree = "<group>"; };
 		AB9FADD92191869200F141F9 /* SkinSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkinSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB9FADDC2191869200F141F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB9FADDD2191869200F141F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +126,10 @@
 				AB9FADDD2191869200F141F9 /* AppDelegate.m */,
 				AB9FADDF2191869200F141F9 /* ViewController.h */,
 				AB9FADE02191869200F141F9 /* ViewController.m */,
+				AB128F492192BCE700E9AB2C /* DBMeController.h */,
+				AB128F4A2192BCE700E9AB2C /* DBMeController.m */,
+				AB128F4C2192C3ED00E9AB2C /* DBHeaderReusableView.h */,
+				AB128F4D2192C3ED00E9AB2C /* DBHeaderReusableView.m */,
 				AB9FADE22191869200F141F9 /* Main.storyboard */,
 				AB9FADE52191869300F141F9 /* Assets.xcassets */,
 				AB9FADE72191869300F141F9 /* LaunchScreen.storyboard */,
@@ -335,9 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB128F4E2192C3ED00E9AB2C /* DBHeaderReusableView.m in Sources */,
 				AB9FADE12191869200F141F9 /* ViewController.m in Sources */,
 				AB9FADEC2191869300F141F9 /* main.m in Sources */,
 				AB9FADDE2191869200F141F9 /* AppDelegate.m in Sources */,
+				AB128F4B2192BCE700E9AB2C /* DBMeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
