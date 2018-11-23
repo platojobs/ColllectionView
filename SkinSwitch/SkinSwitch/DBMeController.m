@@ -9,6 +9,7 @@
 #import "DBMeController.h"
 #import "CHTCollectionViewWaterfallLayout.h"
 #import "DBHeaderReusableView.h"
+#import "DBMeCollCell.h"
 @interface DBMeController ()<UICollectionViewDelegate,UICollectionViewDataSource,CHTCollectionViewDelegateWaterfallLayout>
 @property(nonatomic,strong)UICollectionView*collectionView;
 @property(nonatomic,assign)BOOL isRT;
@@ -18,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor=[UIColor whiteColor];
     CHTCollectionViewWaterfallLayout*layout=[CHTCollectionViewWaterfallLayout new];
     layout.sectionInset=UIEdgeInsetsMake(5, 5, 5, 5 );
    // layout.headerHeight=300;
@@ -30,8 +31,9 @@
     self.collectionView=[[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
     self.collectionView.delegate=self;
     self.collectionView.dataSource=self;
+    self.collectionView.backgroundColor=[UIColor whiteColor];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    [self.collectionView registerClass:[DBMeCollCell class] forCellWithReuseIdentifier:@"cell"];
     [self.collectionView registerClass:[DBHeaderReusableView class] forSupplementaryViewOfKind:CHTCollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:CHTCollectionElementKindSectionHeader withReuseIdentifier:@"head"];
   //  [self.collectionView registerClass:[UIView class] forSupplementaryViewOfKind:CHTCollectionElementKindSectionFooter withReuseIdentifier:@"footer"];
@@ -46,10 +48,14 @@
     return 2;
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 6;}
+    if (section==0) {
+        return 5;
+    }
+    return 2;
+}
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    UICollectionViewCell*cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    DBMeCollCell*cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
      UIColor * randomColor= [UIColor colorWithRed:((float)arc4random_uniform(256) / 255.0) green:((float)arc4random_uniform(256) / 255.0) blue:((float)arc4random_uniform(256) / 255.0) alpha:1.0];
     cell.contentView.backgroundColor=randomColor;
     return cell;
@@ -103,7 +109,7 @@
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout heightForHeaderInSection:(NSInteger)section {
     
     if (section == 0) {
-        return 363;
+        return 143;
     }else {
         return 30;
     }

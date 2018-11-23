@@ -10,6 +10,7 @@
 #import <DKNightVersion/DKNightVersion.h>
 #import "DBMeController.h"
 #import "YYText.h"
+#import "DBItemPayDetailView.h"
 @interface ViewController ()
 {
     
@@ -24,9 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    DBItemPayDetailView*vi=[[DBItemPayDetailView alloc]initWithFrame:CGRectMake(0, 400, self.view.bounds.size.width, 50)];
+    vi.backgroundColor=[UIColor grayColor];
+    [self.view addSubview:vi];
     
-    
-    [self link];
+//  [self link];
     //self.view.backgroundColor=[UIColor blueColor];
 //
 //    UILabel *navigationLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 375, 44)];

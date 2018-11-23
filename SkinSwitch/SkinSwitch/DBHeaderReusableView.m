@@ -14,7 +14,7 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self=[super initWithFrame: frame];
     if (self) {
-        self.backgroundColor=[UIColor blueColor];
+        self.backgroundColor=[UIColor whiteColor];
         [self omotUI];
     }
     return self;
@@ -25,9 +25,9 @@
     [self addSubview:self.headerTitle];
     
     [self.headerView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).offset(15);
-        make.right.equalTo(self).offset(-15);
-        make.height.equalTo(@333);
+        make.left.equalTo(self).offset(0);
+        make.right.equalTo(self).offset(0);
+        make.height.equalTo(@110);
     }];
     
     [self.headerTitle mas_makeConstraints:^(MASConstraintMaker *make) {
